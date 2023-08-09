@@ -1,10 +1,9 @@
-// const url = `https://api.weatherapi.com/v1/forecast.json?key=${key}&q=Bangalore&days=7&aqi=yes&alerts=no`
-// const key = `1d35dcc8063b4122ad764306233001`
+
 
 // 1 fetching the api for weather details
 let target = "Belgaum";
 const fetchWeatherDataByCountry = async (city) => {
-  const key = `1d35dcc8063b4122ad764306233001`;
+  const key = `API_KEY`;
   const url = `https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${city}&days=7`;
   const res = await fetch(url);
   const data = await res.json();
