@@ -1,0 +1,33 @@
+// let target = 'bangalore'
+// const fetchapi = async (cities) => {
+//     const api_key = "1d35dcc8063b4122ad764306233001"
+//     let url = `https://api.weatherapi.com/v1/forecast.json?key=${api_key}&q=${cities}&days=7`
+
+//     const res = await fetch(url)
+//     const data = await res.json()
+    
+//     document.querySelector(".city").textContent = data.location.name + " " + data.location.country;
+//     document.querySelector(".weather-datetime").innerHTML = data.location.localtime;
+//     // const formatedatetime = moment(dateTimeString, "YYYY-MM-DD HH:mm").format("D MMMM YYYY h:mm A")
+//     // const datetimeelemnet = document.querySelector('.weather-datetime')
+//     // datetimeelemnet.textContent = formatedatetime;
+//     document.querySelector(".forecast").innerHTML = data.current.condition.text;
+//     document.querySelector(".weather-icon").innerHTML = `<img src = "https:${data.current.condition.icon}"/>`;
+//     document.querySelector(".temp").innerHTML = data.current.temp_c + "°c";
+//     document.querySelector(".feel").innerHTML = Math.round(data.current.feelslike_c) + "°c";
+//     document.querySelector(".humidity").innerHTML = data.current.humidity + "%";
+//     document.querySelector(".wind").innerHTML = data.current.wind_kph + "kph";
+//     document.querySelector(".pressure").innerHTML = data.current.pressure_mb + "mb";
+
+//     document.querySelector('.date').innerHTML = data.forecast.forecastday[0].date;
+//     document.querySelector('.temperature').innerHTML = Math.round(data.forecast.forecastday[0].day.avgtemp_c) + "°c";
+//     document.querySelector('.icon').innerHTML = `<img src = "https:${data.forecast.forecastday[0].day.condition.icon}"/>`;
+
+//     document.querySelector('.date1').innerHTML = data.forecast.forecastday[1].date;
+//     document.querySelector('.temperature1').innerHTML = Math.round(data.forecast.forecastday[1].day.avgtemp_c) + "°c";
+//     document.querySelector('.icon1').innerHTML = `<img src = "https:${data.forecast.forecastday[1].day.condition.icon}"/>`;
+
+//     document.querySelector('.date2').innerHTML = data.forecast.forecastday[2].date;
+//     document.querySelector('.temperature2').innerHTML = Math.round(data.forecast.forecastday[2].day.avgtemp_c) + "°c";
+//     document.querySelector('.icon2').innerHTML = `<img src = "https:${data.forecast.forecastday[2].day.condition.icon}"/>`;
+// }
