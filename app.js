@@ -115,6 +115,8 @@ function searchButtonClick(e) {
     getWeatherForecastUi(weatherdata);
     getWeatherDetails(weatherdata);
     renderWeekday(weatherdata.forecast.forecastday);
+
+    searchInput.value = "";
   });
 }
 
