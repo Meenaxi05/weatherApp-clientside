@@ -1,7 +1,7 @@
 // 1 fetching the api for weather details
 let target = "Belgaum";
 const fetchWeatherDataByCountry = async (city) => {
-  const key = `apikey`;
+  const key = `1d35dcc8063b4122ad764306233001`;
   const url = `https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${city}&days=7`;
   const res = await fetch(url);
   const data = await res.json();
